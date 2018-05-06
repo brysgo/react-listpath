@@ -1,5 +1,7 @@
 # React ListPath
 
+[![CircleCI](https://circleci.com/gh/brysgo/react-listpath.svg?style=shield)](https://circleci.com/gh/brysgo/react-listpath)
+
 _Let me start by saying I have no clue how this will be useful to you. For me, it is useful in the context of `react-monoquery` where you get graphql data encapsulation without having to pass down your data._
 
 Say you have a component that sits in a couple nested lists. You don't feel like using any fancy data frameworks, and you don't want to have to pass indexes through react just to know what data to get from your component.
