@@ -1,6 +1,6 @@
 # React ListPath
 
-[![CircleCI](https://circleci.com/gh/brysgo/react-listpath.svg?style=shield)](https://circleci.com/gh/brysgo/react-listpath)
+[![CircleCI](https://circleci.com/gh/brysgo/react-listpath.svg?style=shield)](https://circleci.com/gh/brysgo/react-listpath) [![Greenkeeper badge](https://badges.greenkeeper.io/brysgo/react-listpath.svg)](https://greenkeeper.io/)
 
 _Let me start by saying I have no clue how this will be useful to you. For me, it is useful in the context of `react-monoquery` where you get graphql data encapsulation without having to pass down your data._
 
