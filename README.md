@@ -1,6 +1,6 @@
 # React ListPath
 
-![CI](https://github.com/brysgo/angular-monoquery/workflows/CI/badge.svg)
+![CI](https://github.com/brysgo/react-listpath/workflows/CI/badge.svg)
 
 _Let me start by saying I have no clue how this will be useful to you. For me, it is useful in the context of `react-monoquery` where you get graphql data encapsulation without having to pass down your data._
 
