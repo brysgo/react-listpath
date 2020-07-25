@@ -1,6 +1,6 @@
 # React ListPath
 
-[![CircleCI](https://circleci.com/gh/brysgo/react-listpath.svg?style=shield)](https://circleci.com/gh/brysgo/react-listpath) [![Greenkeeper badge](https://badges.greenkeeper.io/brysgo/react-listpath.svg)](https://greenkeeper.io/)
+![CI](https://github.com/brysgo/angular-monoquery/workflows/CI/badge.svg)
 
 _Let me start by saying I have no clue how this will be useful to you. For me, it is useful in the context of `react-monoquery` where you get graphql data encapsulation without having to pass down your data._
 
@@ -39,22 +39,23 @@ import { ListProvider, ListPathConsumer } from "react-listpath";
 
 const myData = [];
 
-const MyItem = ({ someData }) => (<ListPathConsumer>
-  {listPath => <div>{myData[listPath[0]].anotherList[listPath[1]]}</div>}
-</ListPathConsumer>);
+const MyItem = ({ someData }) => (
+  <ListPathConsumer>
+    {(listPath) => <div>{myData[listPath[0]].anotherList[listPath[1]]}</div>}
+  </ListPathConsumer>
+);
 
 const MyPage = () => (
   <ListProvider>
     myData.map((moreData) =>
     <div>
       <ListProvider>
-        {moreData.anotherList.map((someData) =>
+        {moreData.anotherList.map((someData) => (
           <MyItem />
-        )}
+        ))}
       </ListProvider>
-    </div>
-    )
- </ListProvider>
+    </div>)
+  </ListProvider>
 );
 ```
 
